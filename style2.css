@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top1{
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px ;
+}
+
+.full-width-image{
+    transform: translateY(6.5px);
+    transform: translateX(80px);
+    scale: 1.15;
+    overflow-x: hidden;
+    max-width: 100%;
+    
+}
+
+.nav-buttons {
+    display: flex;
+    margin-left: 150px;
+}
+
+
+.nav-button {
+    padding: 1% 20px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-button:hover {
+    background-color: #000;
+    color: #fff;
+    .dropdown-content{
+        color: #000;
+    }
+}
+
+.home {
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-icon{
+    position: absolute;
+    right: 15%;
+}
+
+
+.navbar-2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.breaking-news {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.breaking-news .icon {
+    color: #000;
+    margin-right: 5px;
+    margin-left: 150px;
+    
+}
+
+.breaking-news .text {
+    font-weight: bold;
+    color: #000;
+    margin-left: 170px;
+    position: absolute;
+    font-size: small;
+    width: 100%;
+
+}
+
+.news-content {
+    flex-grow: 1;
+    padding-left: 5%;
+    position: absolute;
+    margin-left: 250px;
+}
+
+.date-weather {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+}
+
+.date-weather .icon {
+    color: #000;
+    margin-right: 5px;
+    
+}
+
+.date-weather .date {
+    color: #000;
+}
+
+
+
+ .category {
+    background-color: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+    
+    
+}
+
+
+.container{
+    float: inline-start;
+    float: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-left: 160px;
+    width: 845px;
+    height: 415px;
+    
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.item1{
+    position: relative;
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.vignette-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, transparent 70%, black 100%);
+}
+
+
+.item2{
+    position: relative;
+}
+
+.item4{
+    position: relative;
+}
+
+#ov1{
+    position: absolute;top: 65%;left: 5%;
+    font-size: small;
+}
+#ov2{
+    position: absolute;top: 10%;left: 5%;
+    
+}
+#ov3{
+    position: absolute;top: 60%;left: 5%;    
+}
+#ov4{
+    position: absolute;top: 10%;left: 5%;    
+}
+
+
+
+.article-title {
+    font-size: 20px;
+    margin-bottom: 25%;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 2%;
+
+}
+
+.meta-info {
+    display: flex;
+    color: hsl(0, 0%, 92%);
+    gap: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 88%;left:5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+
+#img1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+    
+}
+#img2{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+}
+#img3{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+}#img4{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+}
+.item3{
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-sidebar {
+    width: 300px;
+}
+
+
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #2b251a;
+    color: white;
+}
+
+.tab:not(.active) {
+    background-color: #fff;
+    color: #2b251a;
+}
+
+.articles {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.article {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.article-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.article-content {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.date {
+    font-size: 12px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    
+}
+
+.date-new {
+    font-size: 12px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.main1{
+    position: relative;
+}
+
+.container-2 {
+    
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: absolute;
+    right: 200px;
+    margin-top: 3.5%;
+    width: 300px;
+    
+    
+    
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
